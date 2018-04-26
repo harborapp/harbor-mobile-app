@@ -1,5 +1,6 @@
 /* eslint-env jest */
-import { increment, INCREMENT } from '../actions'
+import { increment } from '../actions'
+import { INCREMENT } from '../constants'
 
 describe('increment action', () => {
   it('should correctly create the payload', () => {

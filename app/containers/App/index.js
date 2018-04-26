@@ -1,13 +1,18 @@
 import React from 'react'
-// import { fromJS } from 'immutable'
 import { connect } from 'react-redux'
 import { View, Text } from 'react-native'
+import { FormattedMessage } from 'react-intl'
 
+import messages from './messages'
 import { increment } from './actions'
 
 const app = (props) => (
   <View>
-    <Text onPress={() => props.increment(1)}>Hi from Srishan - Value is {props.value}!</Text>
+    <FormattedMessage {...messages.header}>
+      { 
+      text => <Text onPress={() => props.increment(1)}>text {props.value}</Text>
+      }
+    </FormattedMessage>
   </View>
 )
 

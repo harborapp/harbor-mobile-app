@@ -1,17 +1,18 @@
 import { combineReducers } from 'redux-immutable'
 
 import appReducer from './containers/App/reducer'
+import langReducer from './containers/LanguageProvider/reducer'
 
 /**
  * Create Root Reducer uses Redux's combineReducers
  * on the respective reducers. This function exists
  * to dynamically inject reducers if need be.
  *
- * @param {...Object} injectedReducers
- * @returns {undefined}
+ * @returns {Object}
  */
-export default function createRootReducer (injectedReducers) {
+export default function createRootReducer () {
   return combineReducers({
-    app: appReducer
+    app: appReducer,
+    lang: langReducer
   })
 }
