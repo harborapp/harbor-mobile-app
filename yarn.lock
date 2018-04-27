@@ -5342,9 +5342,9 @@ strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
 
-styles-merge@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/styles-merge/-/styles-merge-1.1.0.tgz#5fec00fe61bc38b13df32318ff665a17ca1dd346"
+styles-merge@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/styles-merge/-/styles-merge-1.2.0.tgz#31fbcba6e2bcd2ca25180aff59c6723e26006755"
 
 supports-color@^2.0.0:
   version "2.0.0"
