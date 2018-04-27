@@ -4,6 +4,6 @@ export const fonts = {
   },
 
   header: {
-    fontFamily: 'NunitoSans-Bold'
+    fontFamily: 'NunitoSans-ExtraBold'
   }
 }
