@@ -3,9 +3,13 @@
 exports[`Container should render 1`] = `
 <View
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "flex": 1,
+      },
+      undefined,
+      undefined,
+    ]
   }
 >
   <Text

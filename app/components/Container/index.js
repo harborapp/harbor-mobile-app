@@ -8,10 +8,26 @@ import { View } from 'react-native'
  *
  * @returns {jsx}
  */
-const Container = (props) => <View style={{ flex: 1 }}>{props.children}</View>
+const Container = ({ children, centerChildren, flex, style, ...props }) => {
+  const styles = [
+    { flex },
+    style,
+    centerChildren ? { alignItems: 'center', justifyContent: 'center' } : undefined
+  ]
+
+  return <View style={styles}>{children}</View>
+}
 
 Container.propTypes = {
-  children: PropTypes.element.isRequired
+  children: PropTypes.element.isRequired,
+  style: View.propTypes.style,
+  flex: PropTypes.number,
+  centerChildren: PropTypes.bool
+}
+
+Container.defaultProps = {
+  flex: 1,
+  centerChildren: false
 }
 
 export default Container
