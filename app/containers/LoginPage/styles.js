@@ -9,9 +9,14 @@ export default StyleSheet.create({
   container: {
     flex: 1
   },
-
-  header: {
+  brandingTitleText: {
+    ...global.fonts.header,
+    color: colors.WHITE,
+    elevation: 1 // TODO: Handle this better.
+  },
+  brandingSubtitleText: {
     ...global.fonts.primary,
-    fontSize: 40
+    color: colors.WHITE,
+    fontSize: 14
   }
 })
