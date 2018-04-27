@@ -15,4 +15,24 @@ describe('Container', () => {
 
     expect(tree).toMatchSnapshot()
   })
+
+  it('should render with custom style props', () => {
+    const tree = renderer.create(
+      <Container style={{ justifyContent: 'center' }}>
+        <Text> Hello world </Text>
+      </Container>
+    )
+
+    expect(tree).toMatchSnapshot()
+  })
+
+  it('should render with center children prop', () => {
+    const tree = renderer.create(
+      <Container centerChildren>
+        <Text> Hello world </Text>
+      </Container>
+    )
+
+    expect(tree).toMatchSnapshot()
+  })
 })
