@@ -46,13 +46,17 @@ describe('styleNames', () => {
   })
 
   it('ifThen - with undefined argThen', () => {
-    const styles = () =>
+    const expectedStyles = {
+      ...style1
+    }
+
+    const actualStyles =
       styleNames()
+        .ifThen(true, style1)
         .ifThen(true, undefined)
-        .ifThen(false, style2)
         .eval()
 
-    expect(styles).toThrow()
+    expect(expectedStyles).toEqual(actualStyles)
   })
 
   it('ifThenElse - falsy case', () => {
@@ -70,26 +74,6 @@ describe('styleNames', () => {
     expect(expectedStyles).toEqual(actualStyles)
   })
 
-  it('ifThenElse - undefined argThen', () => {
-    const styles = () =>
-      styleNames()
-        .ifThen(true, style1)
-        .ifThenElse(false, undefined, style3)
-        .eval()
-
-    expect(styles).toThrow()
-  })
-
-  it('ifThenElse - undefined argElse', () => {
-    const styles = () =>
-      styleNames()
-        .ifThen(true, style1)
-        .ifThenElse(false, style2, undefined)
-        .eval()
-
-    expect(styles).toThrow()
-  })
-
   it('ifThenElse - truthy case', () => {
     const expectedStyles = {
       ...style1,
@@ -105,6 +89,34 @@ describe('styleNames', () => {
     expect(expectedStyles).toEqual(actualStyles)
   })
 
+  it('ifThenElse - undefined argThen', () => {
+    const expectedStyles = {
+      ...style1
+    }
+
+    const actualStyles =
+      styleNames()
+        .ifThen(true, style1)
+        .ifThenElse(true, undefined, style3)
+        .eval()
+
+    expect(expectedStyles).toEqual(actualStyles)
+  })
+
+  it('ifThenElse - undefined argElse', () => {
+    const expectedStyles = {
+      ...style1
+    }
+
+    const actualStyles =
+      styleNames()
+        .ifThen(true, style1)
+        .ifThenElse(false, style2, undefined)
+        .eval()
+
+    expect(expectedStyles).toEqual(actualStyles)
+  })
+
   it('default argument is always present', () => {
     const expectedStyles = {
       ...style1,
@@ -115,6 +127,21 @@ describe('styleNames', () => {
     const actualStyles =
       styleNames(style3)
         .ifThen(true, style1)
+        .ifThen(true, style2)
+        .eval()
+
+    expect(expectedStyles).toEqual(actualStyles)
+  })
+
+  it('multiple default arguments are always present', () => {
+    const expectedStyles = {
+      ...style1,
+      ...style2,
+      ...style3
+    }
+
+    const actualStyles =
+      styleNames(style1, style3)
         .ifThen(true, style2)
         .eval()
 

@@ -4,8 +4,8 @@
  *
  * @returns {Object}
  */
-export default function styleNames (stylePredicatePairs) {
-  let mergedStyles = { ...stylePredicatePairs }
+export default function styleNames (...stylePredicatePairs) {
+  let mergedStyles = stylePredicatePairs.reduce((o, pair) => ({ ...o, ...pair }), {})
 
   /**
    * Prototype method for an 'if-then' semantic.
@@ -13,12 +13,8 @@ export default function styleNames (stylePredicatePairs) {
    * @returns {Object}
    */
   this.ifThen = (argIf, argThen) => {
-    if (typeof argThen !== 'object') {
-      throw new Error('Second argument to .ifThen() should be an object but recieved: ' + typeof argThen)
-    }
-
     if (argIf) {
-      mergedStyles = { ...mergedStyles, ...argThen }
+      mergedStyles = { ...mergedStyles, ...(argThen || {}) }
     }
 
     return this
@@ -30,18 +26,10 @@ export default function styleNames (stylePredicatePairs) {
    * @returns {Object}
    */
   this.ifThenElse = (argIf, argThen, argElse) => {
-    if (typeof argThen !== 'object') {
-      throw new Error('Second argument to .ifThenElse() should be an object but recieved: ' + typeof argThen)
-    }
-
-    if (typeof argElse !== 'object') {
-      throw new Error('Third argument to .ifThenElse() should be an object but recieved: ' + typeof argElse)
-    }
-
     if (argIf) {
-      mergedStyles = { ...mergedStyles, ...argThen }
+      mergedStyles = { ...mergedStyles, ...(argThen || {}) }
     } else {
-      mergedStyles = { ...mergedStyles, ...argElse }
+      mergedStyles = { ...mergedStyles, ...(argElse || {}) }
     }
 
     return this
