@@ -45,6 +45,16 @@ describe('styleNames', () => {
     expect(expectedStyles).toEqual(actualStyles)
   })
 
+  it('ifThen - with undefined argThen', () => {
+    const styles = () =>
+      styleNames()
+        .ifThen(true, undefined)
+        .ifThen(false, style2)
+        .eval()
+
+    expect(styles).toThrow()
+  })
+
   it('ifThenElse - falsy case', () => {
     const expectedStyles = {
       ...style1,
@@ -58,6 +68,26 @@ describe('styleNames', () => {
         .eval()
 
     expect(expectedStyles).toEqual(actualStyles)
+  })
+
+  it('ifThenElse - undefined argThen', () => {
+    const styles = () =>
+      styleNames()
+        .ifThen(true, style1)
+        .ifThenElse(false, undefined, style3)
+        .eval()
+
+    expect(styles).toThrow()
+  })
+
+  it('ifThenElse - undefined argElse', () => {
+    const styles = () =>
+      styleNames()
+        .ifThen(true, style1)
+        .ifThenElse(false, style2, undefined)
+        .eval()
+
+    expect(styles).toThrow()
   })
 
   it('ifThenElse - truthy case', () => {

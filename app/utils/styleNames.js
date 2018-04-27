@@ -13,6 +13,10 @@ export default function styleNames (stylePredicatePairs) {
    * @returns {Object}
    */
   this.ifThen = (argIf, argThen) => {
+    if (typeof argThen !== 'object') {
+      throw new Error('Second argument to .ifThen() should be an object but recieved: ' + typeof argThen)
+    }
+
     if (argIf) {
       mergedStyles = { ...mergedStyles, ...argThen }
     }
@@ -26,6 +30,14 @@ export default function styleNames (stylePredicatePairs) {
    * @returns {Object}
    */
   this.ifThenElse = (argIf, argThen, argElse) => {
+    if (typeof argThen !== 'object') {
+      throw new Error('Second argument to .ifThenElse() should be an object but recieved: ' + typeof argThen)
+    }
+
+    if (typeof argElse !== 'object') {
+      throw new Error('Third argument to .ifThenElse() should be an object but recieved: ' + typeof argElse)
+    }
+
     if (argIf) {
       mergedStyles = { ...mergedStyles, ...argThen }
     } else {
@@ -36,7 +48,7 @@ export default function styleNames (stylePredicatePairs) {
   }
 
   /**
-   * Evaluate styles.
+   * Return the evaulated styles.
    *
    * @returns {Object}
    */
