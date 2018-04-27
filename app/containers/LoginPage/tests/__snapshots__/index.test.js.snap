@@ -55,7 +55,7 @@ exports[`LoginPage should render 1`] = `
             Object {
               "color": "#FFFFFF",
               "elevation": 1,
-              "fontFamily": "NunitoSans-Bold",
+              "fontFamily": "NunitoSans-ExtraBold",
             }
           }
         >

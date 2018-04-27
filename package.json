@@ -25,11 +25,12 @@
     "redux-actions": "^2.3.0",
     "redux-immutable": "^4.0.0",
     "redux-saga": "^0.16.0",
-    "reselect": "^3.0.1"
+    "reselect": "^3.0.1",
+    "styles-merge": "^1.1.0"
   },
   "devDependencies": {
     "babel-preset-react-native": "4.0.0",
-    "jest": "22.4.3",
+    "jest": "^22.4.3",
     "prop-types": "^15.6.1",
     "react-native-linear-gradient": "^2.4.0",
     "react-test-renderer": "16.3.1",

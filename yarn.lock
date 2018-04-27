@@ -3399,7 +3399,7 @@ jest-worker@^22.2.2, jest-worker@^22.4.3:
   dependencies:
     merge-stream "^1.0.1"
 
-jest@22.4.3:
+jest@^22.4.3:
   version "22.4.3"
   resolved "https://registry.yarnpkg.com/jest/-/jest-22.4.3.tgz#2261f4b117dc46d9a4a1a673d2150958dee92f16"
   dependencies:
@@ -5341,6 +5341,10 @@ strip-eof@^1.0.0:
 strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
+
+styles-merge@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/styles-merge/-/styles-merge-1.1.0.tgz#5fec00fe61bc38b13df32318ff665a17ca1dd346"
 
 supports-color@^2.0.0:
   version "2.0.0"
