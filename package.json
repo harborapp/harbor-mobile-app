@@ -10,7 +10,8 @@
     "test": "jest --verbose --coverage",
     "test:update": "jest --verbose --coverage --updateSnapshot",
     "test:watch": "jest --verbose --coverage --watch",
-    "coverage": "jest --verbose --coverage && open ./coverage/lcov-report/index.html"
+    "coverage": "jest --verbose --coverage && open ./coverage/lcov-report/index.html",
+    "link:deps": "react-native link"
   },
   "dependencies": {
     "immutable": "^3.8.2",
@@ -29,6 +30,7 @@
     "babel-preset-react-native": "4.0.0",
     "jest": "22.4.3",
     "prop-types": "^15.6.1",
+    "react-native-linear-gradient": "^2.4.0",
     "react-test-renderer": "16.3.1",
     "standard": "^11.0.1"
   },
