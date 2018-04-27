@@ -1,18 +1,17 @@
 import React from 'react'
+import { View } from 'react-native'
 import { connect } from 'react-redux'
-import { View, Text } from 'react-native'
-import { FormattedMessage } from 'react-intl'
 
 import messages from './messages'
 import { increment } from './actions'
+import FormattedMessage from '../../components/FormattedMessage'
 
 const app = (props) => (
   <View>
-    <FormattedMessage {...messages.header}>
-      { 
-      text => <Text onPress={() => props.increment(1)}>text {props.value}</Text>
-      }
-    </FormattedMessage>
+    <FormattedMessage
+      {...messages.header}
+      values={{ counter: props.value }}
+      onPress={() => props.increment(1)} />
   </View>
 )
 
