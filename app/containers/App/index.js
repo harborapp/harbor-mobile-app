@@ -13,6 +13,7 @@ const app = (props) => (
     <Gradient style={styles.container} colors={gradientBg}>
       <FormattedMessage
         {...messages.header}
+        style={styles.header}
         values={{ counter: props.value }}
         onPress={() => props.increment(1)}
       />
