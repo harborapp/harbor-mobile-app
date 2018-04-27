@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Gradient should render 1`] = `
+<BVLinearGradient
+  colors={
+    Array [
+      4294901760,
+      4278222848,
+    ]
+  }
+  endPoint={undefined}
+  locations={null}
+  startPoint={undefined}
+/>
+`;
