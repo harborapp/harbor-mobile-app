@@ -1,18 +1,23 @@
 import React from 'react'
-import { View } from 'react-native'
 import { connect } from 'react-redux'
 
 import messages from './messages'
 import { increment } from './actions'
+import styles, { gradientBg } from './style'
+import Gradient from '../../components/Gradient'
+import Container from '../../components/Container'
 import FormattedMessage from '../../components/FormattedMessage'
 
 const app = (props) => (
-  <View>
-    <FormattedMessage
-      {...messages.header}
-      values={{ counter: props.value }}
-      onPress={() => props.increment(1)} />
-  </View>
+  <Container>
+    <Gradient style={styles.container} colors={gradientBg}>
+      <FormattedMessage
+        {...messages.header}
+        values={{ counter: props.value }}
+        onPress={() => props.increment(1)}
+      />
+    </Gradient>
+  </Container>
 )
 
 export default connect(state => ({
