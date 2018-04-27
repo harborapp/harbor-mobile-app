@@ -3,13 +3,9 @@
 exports[`Container should render 1`] = `
 <View
   style={
-    Array [
-      Object {
-        "flex": 1,
-      },
-      undefined,
-      undefined,
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
   <Text
@@ -25,16 +21,11 @@ exports[`Container should render 1`] = `
 exports[`Container should render with center children prop 1`] = `
 <View
   style={
-    Array [
-      Object {
-        "flex": 1,
-      },
-      undefined,
-      Object {
-        "alignItems": "center",
-        "justifyContent": "center",
-      },
-    ]
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
   }
 >
   <Text
@@ -50,15 +41,10 @@ exports[`Container should render with center children prop 1`] = `
 exports[`Container should render with custom style props 1`] = `
 <View
   style={
-    Array [
-      Object {
-        "flex": 1,
-      },
-      Object {
-        "justifyContent": "center",
-      },
-      undefined,
-    ]
+    Object {
+      "flex": 1,
+      "justifyContent": "center",
+    }
   }
 >
   <Text
