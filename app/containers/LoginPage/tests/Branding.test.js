@@ -3,13 +3,13 @@ import React from 'react'
 import { IntlProvider } from 'react-intl'
 import renderer from 'react-test-renderer'
 
-import LoginPage from '../'
+import Branding from '../Branding'
 
-describe('LoginPage', () => {
+describe('Branding', () => {
   it('should render', () => {
     const tree = renderer.create(
       <IntlProvider locale='en'>
-        <LoginPage />
+        <Branding />
       </IntlProvider>
     )
 
