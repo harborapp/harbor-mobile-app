@@ -10,5 +10,10 @@ export default defineMessages({
     id: 'login.branding.subtitle',
     description: 'Sub title for the App',
     defaultMessage: 'Painless release cycles for Mobile apps'
+  },
+  loginSectionTitle: {
+    id: 'login.loginSection.title',
+    description: 'Title for the login section',
+    defaultMessage: 'Sign In to get started'
   }
 })

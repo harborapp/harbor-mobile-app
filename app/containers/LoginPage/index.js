@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 
 import Branding from './Branding'
+import LoginSection from './LoginSection'
 import styles, { gradientBg } from './styles'
 import Gradient from '../../components/Gradient'
 import Container from '../../components/Container'
@@ -21,8 +22,7 @@ class LoginPage extends PureComponent {
           </Container>
 
           <Container flex={3}>
-            {/* TODO: remove this */}
-            <React.Fragment />
+            <LoginSection />
           </Container>
         </React.Fragment>
       </Gradient>

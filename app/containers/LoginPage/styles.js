@@ -18,5 +18,11 @@ export default StyleSheet.create({
     ...global.fonts.primary,
     color: colors.WHITE,
     fontSize: 14
+  },
+  loginSectionTitleText: {
+    ...global.fonts.primary,
+    color: colors.WHITE,
+    alignSelf: 'center',
+    fontSize: 18
   }
 })
