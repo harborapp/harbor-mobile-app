@@ -13,6 +13,8 @@ import Container from '../../components/Container'
  * @returns {jsx}
  */
 class LoginPage extends PureComponent {
+  componentDidMount () {}
+
   render () {
     return (
       <Gradient style={styles.container} colors={gradientBg}>

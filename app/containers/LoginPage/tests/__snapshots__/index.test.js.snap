@@ -85,6 +85,134 @@ exports[`LoginPage should render 1`] = `
         "flex": 3,
       }
     }
-  />
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        description="Title for the login section"
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "alignSelf": "center",
+            "color": "#FFFFFF",
+            "fontFamily": "NunitoSans-Regular",
+            "fontSize": 18,
+          }
+        }
+      >
+        Sign In to get started
+      </Text>
+      <View
+        disabled={false}
+        onLongPress={[Function]}
+        onPress={[Function]}
+        style={
+          Array [
+            Object {
+              "shadowColor": "rgba(0,0,0, .4)",
+              "shadowOffset": Object {
+                "height": 1,
+                "width": 1,
+              },
+              "shadowOpacity": 1,
+              "shadowRadius": 1,
+            },
+            Object {
+              "alignItems": "center",
+              "borderRadius": 30,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "margin": 7,
+            },
+            Object {
+              "paddingBottom": 14,
+              "paddingTop": 14,
+            },
+            false,
+            false,
+            Object {
+              "backgroundColor": "#dd4b39",
+            },
+            undefined,
+            undefined,
+          ]
+        }
+        underlayColor="#dd4b39"
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": "white",
+                  "fontSize": 24,
+                },
+                Array [
+                  undefined,
+                ],
+                Object {
+                  "fontFamily": "FontAwesome",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {},
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                Array [
+                  Object {
+                    "color": "white",
+                    "fontWeight": "bold",
+                    "marginLeft": 15,
+                  },
+                  undefined,
+                  undefined,
+                  undefined,
+                  undefined,
+                ],
+              ]
+            }
+          >
+            Sign In with Google
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
 </BVLinearGradient>
 `;

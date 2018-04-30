@@ -13,15 +13,17 @@ import FormattedMessage from '../../components/FormattedMessage'
  */
 const LoginSection = () => (
   <Container>
-    <FormattedMessage
-      {...messages.loginSectionTitle}
-      style={styles.loginSectionTitleText}
-    />
-    <SocialIcon
-      button
-      title='Sign In with Google'
-      type='google-plus-official'
-    />
+    <React.Fragment>
+      <FormattedMessage
+        {...messages.loginSectionTitle}
+        style={styles.loginSectionTitleText}
+      />
+      <SocialIcon
+        button
+        title='Sign In with Google'
+        type='google-plus-official'
+      />
+    </React.Fragment>
   </Container>
 )
 
