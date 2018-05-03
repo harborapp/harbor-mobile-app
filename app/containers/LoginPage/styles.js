@@ -13,9 +13,7 @@ export default StyleSheet.create({
   loginContainer: {
     marginLeft: 35,
     marginRight: 35,
-    marginBottom: 35,
-    flexDirection: 'column',
-    justifyContent: 'space-between'
+    marginBottom: 35
   },
 
   brandingTitleText: {
@@ -32,5 +30,19 @@ export default StyleSheet.create({
 
   separatorText: {
     color: colors.DIMMED_BLUE
+  },
+
+  loginOptionsText: {
+    ...global.fonts.header,
+    color: colors.GRADIENT_HIGH,
+    fontSize: 18
+  },
+
+  googleIcon: {
+    color: colors.GOOGLE_ORANGE
+  },
+
+  githubIcon: {
+    color: colors.BLACK
   }
 })
