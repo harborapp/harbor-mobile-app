@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { View } from 'react-native'
 import stylesmerge from 'styles-merge'
+import { View, StyleSheet } from 'react-native'
 
 /**
  * Container is a generic element to wrap children
@@ -11,7 +11,7 @@ import stylesmerge from 'styles-merge'
  */
 const Container = ({ children, centerChildren, flex, style, ...props }) => {
   const styles = stylesmerge({ flex })
-    .ifThen(style !== undefined, style)
+    .ifThen(style !== undefined, StyleSheet.flatten(style))
     .ifThen(centerChildren === true, { alignItems: 'center', justifyContent: 'center' })
     .eval()
 

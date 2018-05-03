@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 
 import Branding from './Branding'
+import LoginSection from './LoginSection'
 import styles, { gradientBg } from './styles'
 import Gradient from '../../components/Gradient'
 import Container from '../../components/Container'
@@ -12,6 +13,8 @@ import Container from '../../components/Container'
  * @returns {jsx}
  */
 class LoginPage extends PureComponent {
+  componentDidMount () {}
+
   render () {
     return (
       <Gradient style={styles.container} colors={gradientBg}>
@@ -20,9 +23,8 @@ class LoginPage extends PureComponent {
             <Branding />
           </Container>
 
-          <Container flex={3}>
-            {/* TODO: remove this */}
-            <React.Fragment />
+          <Container flex={1}>
+            <LoginSection />
           </Container>
         </React.Fragment>
       </Gradient>
