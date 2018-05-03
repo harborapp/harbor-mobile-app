@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HR should render 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginHorizontal": 8,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.3)",
+        "flex": 1,
+        "height": 1,
+      }
+    }
+  />
+  <View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "flex": 1,
+          "marginLeft": 15,
+          "marginRight": 15,
+          "marginTop": 5,
+          "textAlign": "center",
+        }
+      }
+    >
+      Hello
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.3)",
+        "flex": 1,
+        "height": 1,
+      }
+    }
+  />
+</View>
+`;
