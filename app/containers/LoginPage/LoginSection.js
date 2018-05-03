@@ -1,9 +1,11 @@
 import React from 'react'
-import { SocialIcon } from 'react-native-elements'
+import { Text, StyleSheet } from 'react-native'
 
 import styles from './styles'
 import messages from './messages'
+import HR from '../../components/HR'
 import Container from '../../components/Container'
+import GoogleLogin from '../../components/GoogleLogin'
 import FormattedMessage from '../../components/FormattedMessage'
 
 /**
@@ -12,18 +14,25 @@ import FormattedMessage from '../../components/FormattedMessage'
  * @returns {jsx}
  */
 const LoginSection = () => (
-  <Container>
-    <React.Fragment>
-      <FormattedMessage
-        {...messages.loginSectionTitle}
-        style={styles.loginSectionTitleText}
-      />
-      <SocialIcon
-        button
-        title='Sign In with Google'
-        type='google-plus-official'
-      />
-    </React.Fragment>
+  <Container style={StyleSheet.flatten(styles.loginContainer)}>
+    <GoogleLogin onPress={() => true}>
+      <Text> Login with Google </Text>
+    </GoogleLogin>
+
+    <Container>
+      <HR>
+        {(textStyles) => (
+          <FormattedMessage
+            {...messages.loginOptionsSeparator}
+            style={[textStyles, styles.separatorText]}
+          />
+        )}
+      </HR>
+    </Container>
+
+    <GoogleLogin onPress={() => true}>
+      <Text> Login with Github </Text>
+    </GoogleLogin>
   </Container>
 )
 

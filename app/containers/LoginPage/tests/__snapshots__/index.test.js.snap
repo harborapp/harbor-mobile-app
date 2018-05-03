@@ -82,7 +82,7 @@ exports[`LoginPage should render 1`] = `
   <View
     style={
       Object {
-        "flex": 3,
+        "flex": 1,
       }
     }
   >
@@ -90,127 +90,147 @@ exports[`LoginPage should render 1`] = `
       style={
         Object {
           "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "space-between",
+          "marginBottom": 35,
+          "marginLeft": 35,
+          "marginRight": 35,
         }
       }
     >
-      <Text
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
         accessible={true}
-        allowFontScaling={true}
-        description="Title for the login section"
-        ellipsizeMode="tail"
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "alignSelf": "center",
-            "color": "#FFFFFF",
-            "fontFamily": "NunitoSans-Regular",
-            "fontSize": 18,
+            "backgroundColor": "white",
+            "flex": 1,
+            "padding": 20,
+            "width": "100%",
           }
         }
+        testID={undefined}
+        tvParallaxProperties={undefined}
       >
-        Sign In to get started
-      </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={null}
+        >
+           Login with Google 
+        </Text>
+      </View>
       <View
-        disabled={false}
-        onLongPress={[Function]}
-        onPress={[Function]}
         style={
-          Array [
-            Object {
-              "shadowColor": "rgba(0,0,0, .4)",
-              "shadowOffset": Object {
-                "height": 1,
-                "width": 1,
-              },
-              "shadowOpacity": 1,
-              "shadowRadius": 1,
-            },
-            Object {
-              "alignItems": "center",
-              "borderRadius": 30,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "margin": 7,
-            },
-            Object {
-              "paddingBottom": 14,
-              "paddingTop": 14,
-            },
-            false,
-            false,
-            Object {
-              "backgroundColor": "#dd4b39",
-            },
-            undefined,
-            undefined,
-          ]
+          Object {
+            "flex": 1,
+          }
         }
-        underlayColor="#dd4b39"
       >
         <View
           style={
             Object {
               "alignItems": "center",
+              "flex": 1,
               "flexDirection": "row",
               "justifyContent": "center",
+              "marginHorizontal": 8,
             }
           }
         >
-          <Text
-            accessible={true}
-            allowFontScaling={false}
-            ellipsizeMode="tail"
+          <View
             style={
-              Array [
-                Object {
-                  "color": "white",
-                  "fontSize": 24,
-                },
-                Array [
-                  undefined,
-                ],
-                Object {
-                  "fontFamily": "FontAwesome",
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                },
-              ]
+              Object {
+                "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                "flex": 1,
+                "height": 1,
+              }
             }
-          >
-            
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Array [
-                Object {},
-                undefined,
-                undefined,
-                undefined,
-                undefined,
-                undefined,
-                undefined,
-                undefined,
-                undefined,
-                undefined,
+          />
+          <View>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              description="Separator text for the login options"
+              ellipsizeMode="tail"
+              style={
                 Array [
                   Object {
-                    "color": "white",
-                    "fontWeight": "bold",
+                    "flex": 1,
                     "marginLeft": 15,
+                    "marginRight": 15,
+                    "marginTop": 5,
+                    "textAlign": "center",
                   },
-                  undefined,
-                  undefined,
-                  undefined,
-                  undefined,
-                ],
-              ]
+                  Object {
+                    "color": "#00D1FF",
+                  },
+                ]
+              }
+            >
+              or
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                "flex": 1,
+                "height": 1,
+              }
             }
-          >
-            Sign In with Google
-          </Text>
+          />
         </View>
+      </View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "white",
+            "flex": 1,
+            "padding": 20,
+            "width": "100%",
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={null}
+        >
+           Login with Github 
+        </Text>
       </View>
     </View>
   </View>

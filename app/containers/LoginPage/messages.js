@@ -15,5 +15,10 @@ export default defineMessages({
     id: 'login.loginSection.title',
     description: 'Title for the login section',
     defaultMessage: 'Sign In to get started'
+  },
+  loginOptionsSeparator: {
+    id: 'login.loginSection.separator',
+    description: 'Separator text for the login options',
+    defaultMessage: 'or'
   }
 })

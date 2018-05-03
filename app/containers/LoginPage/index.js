@@ -23,7 +23,7 @@ class LoginPage extends PureComponent {
             <Branding />
           </Container>
 
-          <Container flex={3}>
+          <Container flex={1}>
             <LoginSection />
           </Container>
         </React.Fragment>

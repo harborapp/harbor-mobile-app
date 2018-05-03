@@ -9,20 +9,28 @@ export default StyleSheet.create({
   container: {
     flex: 1
   },
+
+  loginContainer: {
+    marginLeft: 35,
+    marginRight: 35,
+    marginBottom: 35,
+    flexDirection: 'column',
+    justifyContent: 'space-between'
+  },
+
   brandingTitleText: {
     ...global.fonts.header,
     color: colors.WHITE,
     elevation: 1 // TODO: Handle this better.
   },
+
   brandingSubtitleText: {
     ...global.fonts.primary,
     color: colors.WHITE,
     fontSize: 14
   },
-  loginSectionTitleText: {
-    ...global.fonts.primary,
-    color: colors.WHITE,
-    alignSelf: 'center',
-    fontSize: 18
+
+  separatorText: {
+    color: colors.DIMMED_BLUE
   }
 })
