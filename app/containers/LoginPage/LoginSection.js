@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, StyleSheet } from 'react-native'
+import { StyleSheet } from 'react-native'
 
 import styles from './styles'
 import messages from './messages'
@@ -15,24 +15,26 @@ import FormattedMessage from '../../components/FormattedMessage'
  */
 const LoginSection = () => (
   <Container style={StyleSheet.flatten(styles.loginContainer)}>
-    <GoogleLogin onPress={() => true}>
-      <Text> Login with Google </Text>
-    </GoogleLogin>
+    <React.Fragment>
+      <GoogleLogin onPress={() => true}>
+        <FormattedMessage {...messages.loginGoogle} />
+      </GoogleLogin>
 
-    <Container>
-      <HR>
-        {(textStyles) => (
-          <FormattedMessage
-            {...messages.loginOptionsSeparator}
-            style={[textStyles, styles.separatorText]}
-          />
-        )}
-      </HR>
-    </Container>
+      <Container>
+        <HR>
+          {(textStyles) => (
+            <FormattedMessage
+              {...messages.loginOptionsSeparator}
+              style={[textStyles, styles.separatorText]}
+            />
+          )}
+        </HR>
+      </Container>
 
-    <GoogleLogin onPress={() => true}>
-      <Text> Login with Github </Text>
-    </GoogleLogin>
+      <GoogleLogin onPress={() => true}>
+        <FormattedMessage {...messages.loginGithub} />
+      </GoogleLogin>
+    </React.Fragment>
   </Container>
 )
 
