@@ -14,9 +14,6 @@ export default StyleSheet.create({
     backgroundColor: 'rgba(255, 255, 255, 0.3)'
   },
   text: {
-    flex: 1,
-    textAlign: 'center',
-    marginTop: 5,
     marginLeft: 15,
     marginRight: 15
   }
